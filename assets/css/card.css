@@ -1,0 +1,125 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+
+
+.box p {
+    color: #0d1117;
+    font-size: 27px;
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 10px;  
+}
+
+.box img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+    background-color: #fff;
+}
+.red {
+    border-top: 3px solid var(--red);
+    background-color:#fff;
+}
+.blue {
+    border-top: 3px solid var(--blue);
+    background-color: #fff;
+}
+.orange {
+    border-top: 3px solid var(--orange);
+    background-color: #fff;
+}
+
+.box h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+.red-valor {
+    color: red !important;
+}
+.greem-valor {
+    color: green !important;
+}
+.blue-valor {
+    color: blue !important;
+}
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+    }
+    .box {
+        width: 240px;
+     
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}
+.actions{
+    width: 60%;
+    margin: 4px auto;
+    
+}
+
+.btn-actions {
+    padding: 10px;
+    margin-top: 3px 3px;
+    border: none;
+    background-color: #5B25F5;
+    cursor: pointer;
+    color: var(--veryLightGray);
+    font-size: 16px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+/* .table thead tr th, .table tbody tr td   {
+ 
+} */
+
+.chart svg {
+    color: var(--red) !important;
+}
